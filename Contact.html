@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I Coders</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+     
+     <!-- Navbar -->
+      
+    <nav class="navbar navbar-expand-lg  " style="background-color:#0F202A ">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">ICoder</a>
+          <button class="navbar-toggler" type="button " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link  text-white" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link text-white" href="/about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Services 
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Web Development</a></li>
+                  <li><a class="dropdown-item" href="#">Technology</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Support</a></li>
+                  <li><a class="dropdown-item" href="#">Write For Us</a></li>
+                </ul>
+              </li>
+              <li class="nav-item active fw-bold">
+                <a class="nav-link text-white active" href="/Contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 35rem;">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger"data-bs-toggle="modal" data-bs-target="#LogOutModal">Log Out</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+<!-- Log Out -->
+
+      <div class="modal fade" id="LogOutModal" tabindex="-1" aria-labelledby="LogoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="LogoutModalLabel">Confurm Log Out </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input mx-2" id="exampleCheck1">
+                  <label class="form-check-label " for="LogoutCheck1">Confurm logOut</label>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" id="logoutbutton" class="btn btn-danger " href="exit">Log Out</button>
+                </div>
+                <script>
+                  document.getElementById('logoutbutton').addEventListener('click', function() {
+                      // Attempt to close the window
+                      window.open('', '_self').close();
+                  });
+                  </script>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-5">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1 ">Email address</label>
+              <input type="email" class="form-control my-3" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1"> Select Quary</label>
+              <select class="form-control my-3" id="exampleFormControlSelect1">
+                <option> </option>
+                <option>Web_development</option>
+                <option>Teck Stack</option>
+                <option>Techanology</option>
+                <option>Sequerity</option>
+                <option>data Science progect</option>
+              </select>
+            </div>
+           
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Eleborate Your concurn</label>
+              <textarea class="form-control my-3" id="exampleFormControlTextarea1" rows="2"></textarea>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Are you a Member ICoder?</label>
+              </div>
+
+            <button class="btn btn-primary w-20 my-4" >Submite</button>
+          </form>
+
+      </div>
+
+      <!-- footer -->
+ 
+      <div class="container">
+        <footer class="container">
+          <p class="float-end"><a href="#">Back to top</a></p>
+          <p>© 2023–2024 ICoder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+      </div>
+      
+   
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
